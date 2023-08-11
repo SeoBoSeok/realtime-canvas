@@ -2,7 +2,7 @@ const express = require('express');
 const expressApp = express();
 const httpServer = require('http').createServer(expressApp);
 const io = require('socket.io')(httpServer, {
-    cors: { origin: true }
+    cors: { origin: false }
 })
 
 const port = process.env.PORT || 5500;
